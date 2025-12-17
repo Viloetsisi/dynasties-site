@@ -1,16 +1,16 @@
 # 快速部署
 ## 前提条件
-- ✅ Ubuntu 22.04 服务器 (2核2G+)
-- ✅ 域名已购买
-- ✅ DNS 已配置 A 记录指向服务器 IP
+-  Ubuntu 22.04 服务器 (2核2G+)
+-  域名已购买
+-  DNS 已配置 A 记录指向服务器 IP
 
-## 1️ 克隆代码
+## 1 克隆代码
 ```bash
 git clone <your-repo-url> /var/www/dynasties-site
 cd /var/www/dynasties-site
 ```
 
-## 2️ 后端部署
+## 2 后端部署
 ```bash
 cd backend
 python3 -m venv .venv && source .venv/bin/activate
@@ -29,7 +29,7 @@ ADMIN_PASSWORD=你的强密码
 DATABASE_URL=sqlite:///./emails.db
 ```
 
-## 3️ 前端部署
+## 3 前端部署
 ```bash
 cd /var/www/dynasties-site/frontend
 npm install
@@ -48,7 +48,7 @@ VITE_API_BASE=https://api.yourdomain.com
 npm run build
 ```
 
-## 4️ systemd 服务
+## 4 systemd 服务
 ```bash
 sudo nano /etc/systemd/system/dynasties-api.service
 ```
@@ -150,7 +150,7 @@ sudo systemctl reload nginx
 sudo tail -f /var/log/nginx/error.log
 ```
 
-## ⚠️ 必改配置清单
+## 配置清单
 
 | 位置 | 必须修改的内容 |
 |------|----------------|
