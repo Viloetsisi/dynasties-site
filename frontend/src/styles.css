@@ -5,3 +5,24 @@
 :root{
   color-scheme: dark;
 }
+
+* {
+  font-family: "Poppins", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 10s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
