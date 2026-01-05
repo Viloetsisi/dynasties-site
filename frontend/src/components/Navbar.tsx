@@ -26,6 +26,7 @@ export function Navbar() {
           <a href="/" className="text-base font-semibold text-black hover:opacity-70">About Us</a>
           <a href="/our-value" className="text-base font-semibold text-black hover:opacity-70">Our Value</a>
           <a href="/why-exclusive-licensing" className="text-base font-semibold text-black hover:opacity-70">Why Exclusive Licensing</a>
+          <a href="/portfolio" className="text-base font-semibold text-black hover:opacity-70">Portfolio</a>
           <a href="/#contact" className="text-base font-semibold text-black hover:opacity-70">Contact Us</a>
         </div>
 
