@@ -5,3 +5,27 @@
 :root{
   color-scheme: dark;
 }
+
+* {
+  font-family: "Poppins", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+/* PartnersMarquee */
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1 * var(--marquee-distance)));
+  }
+}
+
+.marquee-track {
+  animation: marquee-scroll var(--marquee-duration) linear infinite;
+}
+
+/* 鼠标悬停时暂停滚动 */
+.marquee-track:hover {
+  animation-play-state: paused;
+}
